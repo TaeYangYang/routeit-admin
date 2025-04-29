@@ -28,6 +28,6 @@ css
 5. npx tailwindcss init -p
 
 ---
-vue port:  
+vue port:  8090
 
 ---

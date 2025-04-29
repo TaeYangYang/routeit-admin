@@ -11,6 +11,12 @@ export default defineConfig({
     }
   },
   server: {
-    port: 8090 // 포트를 8090으로 설정
+    port: 8090, // 포트를 8090으로 설정
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8081',
+        changeOrigin: true
+      }
+    }
   }
 })
